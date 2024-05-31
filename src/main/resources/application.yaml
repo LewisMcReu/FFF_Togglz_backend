@@ -1,0 +1,33 @@
+togglz:
+  console:
+    secured: false
+    feature-admin-authority: ROLE_ADMIN
+  features:
+    save_flag:
+      enabled: false
+      strategy: username
+      param:
+        users: "*"
+    like_flag:
+      enabled: false
+    update_flag:
+      enabled: false
+      strategy: username
+      param:
+        users: "*"
+    charge_layer:
+      enabled: false
+    nasa_emblem:
+      enabled: false
+      strategy: username
+      param:
+        users: howard
+    colour_picker:
+      enabled: false
+    release_toggle:
+      enabled: false
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,togglz
